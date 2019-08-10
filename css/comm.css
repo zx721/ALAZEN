@@ -1,0 +1,15 @@
+/*css reset*/
+blockquote,body,button,dd,dt,dl,fieldset,from,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0!important;padding:0!important;}
+.my_fonts{
+  font-family: "Dosis", sans-serif;
+  font-size: 16px;
+  color: #707070;
+  font-family: "Dosis", sans-serif;
+}
+a{
+  text-decoration: none !important;
+}
+a:hover{
+  text-decoration: none !important;
+}
+

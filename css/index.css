@@ -1,0 +1,656 @@
+/* 预加载项样式
+.preloader {
+    background-color: #f2f4f5;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    overflow: hidden; }
+.preloader .preloader-circle {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    border-style: solid;
+    border-width: 2px;
+    border-top-color: #70c745;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    z-index: 10;
+    border-radius: 50%;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    -webkit-animation: zoom 2000ms infinite ease;
+    animation: zoom 2000ms infinite ease; }
+.preloader .preloader-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 200; }
+.preloader .preloader-img img {
+   max-width: 45px; }
+*/
+
+
+/* 标题区域样式 Header Area CSS */
+.header-area{
+    width: 100%;
+    position: relative;
+    background:url("../img/bg-img/2.jpg") no-repeat;
+    background-size:cover; 
+    background-position: center center;
+    /*height: 600px;  */
+}
+.header-area-Mask{
+    background-color:rgba(17, 17, 17, 0.5);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.top-header-area{
+    width: 100%;
+    height: 42px;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(235, 235, 235, 0.2);
+}
+.content{
+    background-color: transparent;
+    width: 100%;
+    height: 41px;
+    margin: 0 auto;
+}
+.content .top-font1{
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+    color: #fff;
+}
+.email_icon{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url("../img/core-img/email_phone.gif") no-repeat;
+    background-position: 1px 3px;
+    background-size: cover;
+}
+.phone_icon{
+    background-position: 4px -20px;
+}
+.top-font2{
+    font-size: 12px;
+    color: #fff;
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    content:"|";
+    color:rgba(235, 235, 235, 0.2);
+}
+.rw_icon{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url("../img/core-img/rw.gif") no-repeat;
+    background-position: -2px 3px;
+    background-size: cover;
+}
+.gwc_icon {
+    display: inline-block;
+    width: 15px;
+    height: 19px;
+    background: url("../img/core-img/rw.gif") no-repeat;
+    background-position: -45px 5px;
+    background-size: cover;
+}
+.breadcrumb-item a:hover{
+    color: #ffffff !important;
+}
+.breadcrumb-item ul li a{
+    font-size: 12px;
+    color: #ffffff;
+}
+.breadcrumb-item{
+    font-size: 12px;
+    color: #ffffff;
+}
+.dropdown a:hover{
+    cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+    .content .top-font1 span:nth-child(2){
+        display: none;
+    }
+    .breadcrumb .top-font2 span:nth-child(2){
+        display: none;
+    }
+    .content .top-font1 .email_icon{
+        background-position: 1px 0px;
+    }
+    .content .top-font1 .phone_icon{
+        background-position: 1px -25px;
+        position: absolute;
+        left: -60%;
+        top:30%;
+    }
+    .header-area{
+        height:500px;
+    }
+    .brief_intro{
+        margin-top: 10%;
+    }
+    .brief_intro>div:nth-child(2){
+        margin-bottom: 10%;
+        margin-top: 1%;
+    }
+    .brief_intro>div:nth-child(1){
+        font-size: 24px !important;
+    }
+    .our_server ul li{
+        width: 100%;
+    }
+    .tzzht>img{
+        height: 300px;
+    }
+    .zxhd{
+        height: 280px;
+    }
+    .zxhd>h2{
+        position: absolute;
+        top: 33%;
+        left: 32%;
+    }
+    .zxhd>p{
+        position: absolute;
+        top: 47%;
+        left: 47%;
+    }
+    .zxhd>h2{
+        position: absolute;
+        top: 33%;
+        left: 24%;
+    }
+    .zxhd>p{
+        position: absolute;
+        top: 47%;
+        left: 37%;
+    }
+    .zxhd7>h2{
+        position: absolute;
+        top: 35%;
+        left: 37%;
+    }
+    .zxhd7>p{
+        position: absolute;
+        top: 50% !important;
+        left: 44% !important;
+    }
+    .xdd .ckqb{
+        left: 33%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .header-area{
+        height: 600px;
+    }
+    .brief_intro{
+        margin-top: 10%;
+    }
+    .brief_intro>div:nth-child(2){
+        margin-bottom: 10%;
+        margin-top: 1%;
+    }
+    .brief_intro>div:nth-child(1){
+        font-size: 30px !important;
+    }
+    .our_server ul li{
+        width: 85%;
+    }
+    .tzzht>img{
+        height: 400px;
+    }
+    .zxhd{
+        height: 380px;
+    }
+    .zxhd>h2{
+        position: absolute;
+        top: 33%;
+        left: 32%;
+    }
+    .zxhd>p{
+        position: absolute;
+        top: 47%;
+        left: 41%;
+    }
+    .zxhd>h2{
+        position: absolute;
+        top: 33%;
+        left: 30%;
+    }
+    .zxhd>p{
+        position: absolute;
+        top: 47%;
+        left: 39%;
+    }
+    .zxhd7>h2{
+        position: absolute;
+        top: 35%;
+        left: 40%;
+    }
+    .zxhd7>p{
+        position: absolute;
+        top: 50% !important;
+        left: 45% !important;
+    }
+    .xdd .ckqb{
+        left: 38%;
+    }
+}
+@media screen and (min-width: 992px){
+    .header-area{
+        height: 930px;
+    }
+    .brief_intro{
+        margin-top: 22%;
+    }
+    .brief_intro>div:nth-child(2){
+        margin-bottom: 10%;
+        margin-top: 3%;
+    }
+    .brief_intro>div:nth-child(1){
+        font-size: 45px !important;
+    }
+    .our_server ul li{
+        width: 85%;
+    }
+    .tzzht>img{
+        height: 290px;
+    }
+    .zxhd{
+        height: 270px;
+    }
+    .zxhd>h2{
+        position: absolute;
+        top: 33%;
+        left: 25%;
+    }
+    .zxhd>p{
+        position: absolute;
+        top: 47%;
+        left: 39%;
+    }
+    .zxhd7>h2{
+        position: absolute;
+        top: 35%;
+        left: 38%;
+    }
+    .zxhd7>p{
+        position: absolute;
+        top: 50% !important;
+        left: 44% !important;
+    }
+    .xdd .ckqb{
+        left: 41%;
+    }
+}
+@media screen and (min-width: 1200px){
+    .tzzht>img{
+        height: 400px;
+    }
+    .zxhd{
+        height: 380px;
+    }
+
+    .zxhd>h2{
+        position: absolute;
+        top: 33%;
+        left: 31%;
+    }
+    .zxhd>p{
+        position: absolute;
+        top: 47%;
+        left: 38%;
+    }
+    .zxhd7>h2{
+        position: absolute;
+        top: 35%;
+        left: 42%;
+    }
+    .zxhd7>p{
+        position: absolute;
+        top: 50% !important;
+        left: 45% !important;
+    }
+    .xdd .ckqb{
+        left: 41%;
+    }
+}
+.navbar{
+    width: 100%;
+    height: 90px;
+}
+.nav-link{
+    color: #ffffff !important;
+    margin-left:1.5rem !important;
+    font-size: 18px;
+    font-family: "Dosis", sans-serif;
+}
+.sreach_icon{
+    width: 35%;
+    position: relative;
+    left: 45%;
+}
+.search_link{
+    margin: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+
+.brief_intro>div:nth-child(3)>div:nth-child(2){
+    color: #70c745;
+    width: 125px;
+    height: 46px;
+    border: 2px solid #70c745;
+    line-height: 30px;
+}
+.brief_intro>div:nth-child(3)>div:nth-child(1){
+    width: 125px;
+    height: 46px;
+    background-color: #70c745 !important;
+    line-height: 30px;
+    margin-right: 7%;
+}
+
+/*我们的服务*/
+.fu_bg{
+    width: 100%;
+    background-color: #f2f4f5;
+}
+.our_server>.container>h2{
+    font-size:30px ;
+    color: #303030;
+    padding-bottom: 0.3rem!important;
+    padding-top: 5% !important;
+}
+.our_server .zwhl>h3{
+    font-size: 20px !important;
+    color: #303030!important;
+}
+.our_server>.container div{
+    padding-bottom: 8%;
+}
+
+/*关于我们*/
+.progress .bghj{
+    width: 80%;
+    background-color: #70c745;
+}
+.about_us>.zc>h2{
+    font-size: 30px;
+    color: #303030;
+}
+.about_us>.zc>span{
+    font-size: 18px;
+    color: #303030;
+}
+.about_us>.zc>.bashi{
+    padding-left: 52%;
+}
+.about_us .zc{
+    padding-right: 7%;
+}
+.about_us .xcjl{
+    width: 70%;
+}
+.about_us .qishi{
+    padding-left: 46%;
+}
+.about_us .bawu{
+    padding-left: 61%;
+}
+.about_us .jgsj{
+    width: 85%;
+}
+.about_us .liuwu{
+    padding-left: 42%;
+}
+.about_us .hyhl{
+    width: 65%;
+}
+.about_us .yc .yzcp{
+    font-size: 20px;
+    color: #303030;
+}
+.fjx{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding-bottom: 8%;
+}
+
+/*投资组合*/
+.tzzh ul li>a{
+    color: #707070 !important;
+    font-size: 20px!important;
+}
+@media screen and (max-width: 767px) {
+    .tzzh ul li a{
+        font-size: 15px !important;
+    }
+}
+.tzzh>h1{
+    font-size: 30px;
+    color: #303030;
+}
+.tzzht img{
+    width: 100%;
+    padding: 10px;
+}
+.tzzht img:hover{
+    position: relative;
+    top:-10px;
+}
+.bj{
+    width: 100%;
+    padding: 10px;
+}
+.zxhd{
+    background: url("../img/bg-img/16.jpg") no-repeat;
+    background-size: cover;
+}
+.bg_green{
+    width: 100%;
+    height: 100%;
+    background: #70c745;
+    opacity: 0.5;
+}
+
+.bj:hover{
+    position: relative;
+    top: -15px;
+
+}
+.zxhd2{
+    background:  url("../img/bg-img/17.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.zxhd3{
+    background:  url("../img/bg-img/18.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.zxhd4{
+    background:  url("../img/bg-img/19.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.zxhd5{
+    background:  url("../img/bg-img/20.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.zxhd6{
+    background:  url("../img/bg-img/21.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.zxhd7{
+    background:  url("../img/bg-img/22.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/*大师轮播图*/
+.carousel-indicators li{
+    width: 0.8rem !important;
+    height: 0.8rem !important;
+    border-radius: 50%;
+    margin: 0 6px !important; 
+    border:2px solid #b6b7b7; 
+}
+.carousel-indicators{
+    left: -5%;
+    top:110% ;
+}
+.carousel-inner{
+    left: 20%;
+}
+.lbt{
+    margin-top: 15%;
+}
+.rounded-circle{
+    width: 55%;
+}
+.carousel-indicators li:hover{
+    cursor: pointer;
+}
+.carousel-indicators .active{
+    border: 2px solid #70c745;
+}
+.xiaoyuan{
+    position: relative;
+    width:50%;
+    height: 50%;
+    border-radius: 50%;
+    background: #70c745;
+    top:25%;
+    left: 23%;
+}
+.dashi_js>h1{
+    color: #303030;
+    font-size: 30px;
+}
+.dashi_js>h3{
+    color: #303030;
+    font-size: 18px;
+}
+.dashi_js>h4{
+    color: #70c745;
+}
+.dashi_js{
+    padding-left: 1%;
+    padding-right: 2%;
+}
+
+/*新抵达*/
+.xdd_bg{
+    width: 100%;
+    background-color: #f2f4f5;
+    margin-top: 10%;
+    padding-bottom: 10%;
+    padding-top: 7%;
+}
+.xdd ul li img{
+    width: 90%;
+}
+.xdd>h1{
+    color: #303030;
+    font-size: 30px;
+}
+.xdd .ckqb{
+    width: 150px;
+    height: 46px;
+    background-color: #70c745;
+    line-height: 35px;
+    position: relative;
+}
+
+/*最新消息*/
+.zxxx>h1{
+    font-size: 30px;
+    color: #303030;
+    font-weight: 500;
+}
+.zxxx .row a{
+    font-size: 1.25rem;
+    color: #303030;
+    font-weight: 500;
+}
+.zxxx .row span{
+    font-size: 14px;
+    color: #b7b7b7;
+    font-weight: 500;
+}
+.zxxx .row span img{
+    width: 5%;
+}
+
+/*加入时事通讯*/
+.sstx_bg{
+    background: url("../img/bg-img/subscribe.png") no-repeat;
+    background-position: right center;
+    background-size: cover;
+    margin-top: 7%;
+}
+.sstx_bg>div{
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.sstx_bg>div h1{
+    font-size: 30px;
+    color:#303030;
+    font-weight: 500;
+}
+.sstx_bg>.container>form{
+    position:relative;
+    width: 50%;
+    left:10px;
+}
+.sstx_bg>.container>form>input{
+    width: 70%;
+    height: 46px;
+    border-radius: 0px;
+    padding-left: 13px !important;
+}
+.sstx_bg>.container>form>button{
+    width: 30%;
+    height: 46px;
+    border-radius: 0;
+}
+.sstx_bg>img{
+    left: 5%;
+    top:-17%;
+}
+
+/*保持联系*/
+.bclx form input:nth-child(1),.bclx form input:nth-child(2){
+    width: 47%
+}
+.bclx form button{
+    width: 150px;
+    height: 46px;
+    background-color: #70c745;
+}
+.bclx_all h1{
+    font-size: 30px;
+    color: #303030;
+    font-weight: 500;
+}
+.bclx_all{
+    margin-top: 5%;
+}

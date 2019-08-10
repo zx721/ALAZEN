@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- 设置视口-->
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <!-- 导入CSS-->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <!-- 导入三个js-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- 样式-->
+    <link rel="stylesheet" href="css/shop.css"/>
+    <link rel="stylesheet" href="css/comm.css"/>
+    <link rel="stylesheet" href="css/iconfont.css"/>
+</head>
+<body>
+<!--面包屑导航：首页>商店 回家补-->
+<!--面包屑导航-->
+<div class="container part_top mt-5">
+    <ul class="breadcrumb bg-transparent">
+        <li class="breadcrumb-item">
+            <a href="#" class="my_fonts">
+                <span class="glyphicon glyphicon-home" aria-hidden="true"></span> 首页</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="#" class="my_fonts">商品</a>
+        </li>
+    </ul>
+</div>
+<!--显示72项结果中的1-9项-->
+<div class="container">
+    <div class="shop_top row d-flex justify-content-between align-items-center mt-5 ">
+        <span class="col-sm-12 col-md-4 text-sm-center text-md-left mb-sm-2 mb-md-0">显示72项结果中的1-9项</span>
+        <form action="" class="col-sm-12 col-md-8 form-inline w-100 d-flex justify-content-sm-center justify-content-md-end align-items-center">
+            <select>
+                <option value="">人气短促</option>
+                <option value="">最新上架</option>
+                <option value="">评分最高</option>
+                <option value="">售量最高</option>
+            </select>
+            <select>
+                <option value="">显示：9</option>
+                <option value="">12</option>
+                <option value="">18</option>
+                <option value="">24</option>
+            </select>
+        </form>
+    </div>
+    <div class="shop_top1"></div>
+</div>
+<!--商品详情页面-->
+<div class="container">
+    <div class="row">
+        <!--价格筛选区域-->
+        <div class="col-sm-12 col-md-3 choose">
+            <!--价格滚动条 空-->
+            <p class="my_fonts price1 mb-3">价格</p>
+            <!-- <div class="w-100 bg-success">111</div> -->
+            <p class="my_fonts mt-2">价格xx元--xx元</p>
+            <!--分类-->
+            <h4 class="my_fonts mt-5">分类</h4>
+            <div class="custom-control custom-checkbox d-flex align-items-center mb-2 mt-3">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">
+                    <span class="my_fonts">所有植物 (72)</span>
+                </label>
+            </div>
+            <div class="custom-control custom-checkbox d-flex align-items-center mb-2">
+                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                <label class="custom-control-label" for="customCheck2">
+                    <span class="my_fonts">室外植物 (20)</span>
+                </label>
+            </div>
+            <div class="custom-control custom-checkbox d-flex align-items-center mb-2">
+                <input type="checkbox" class="custom-control-input" id="customCheck3">
+                <label class="custom-control-label" for="customCheck3">
+                    <span class="my_fonts">室内植物 (15)</span>
+                </label>
+            </div>
+            <div class="custom-control custom-checkbox d-flex align-items-center mb-2">
+                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                <label class="custom-control-label" for="customCheck4">
+                    <span class="my_fonts">办公室植物 (20)</span>
+                </label>
+            </div>
+            <div class="custom-control custom-checkbox d-flex align-items-center mb-2">
+                <input type="checkbox" class="custom-control-input" id="customCheck5">
+                <label class="custom-control-label" for="customCheck5">
+                    <span class="my_fonts">盆栽 (15)</span>
+                </label>
+            </div>
+            <div class="custom-control custom-checkbox d-flex align-items-center mb-2">
+                <input type="checkbox" class="custom-control-input" id="customCheck6">
+                <label class="custom-control-label" for="customCheck6">
+                    <span class="my_fonts">其他 (2)</span>
+                </label>
+            </div>
+            <!--排序方式-->
+            <h4 class="my_fonts mt-5">排序方式</h4>
+            <div class="custom-control custom-checkbox d-flex align-items-center mb-2 mt-3">
+                <input type="checkbox" class="custom-control-input" id="customCheck7">
+                <label class="custom-control-label" for="customCheck7">
+                    <span class="my_fonts">最新上架</span>
+                </label>
+            </div>
+            <div class="custom-control custom-checkbox d-flex align-items-center mb-2">
+                <input type="checkbox" class="custom-control-input" id="customCheck8">
+                <label class="custom-control-label" for="customCheck8">
+                    <span class="my_fonts">按字母A-Z排列</span>
+                </label>
+            </div>
+            <div class="custom-control custom-checkbox d-flex align-items-center mb-2">
+                <input type="checkbox" class="custom-control-input" id="customCheck9">
+                <label class="custom-control-label" for="customCheck9">
+                    <span class="my_fonts">按字母Z-A排列</span>
+                </label>
+            </div>
+            <div class="custom-control custom-checkbox d-flex align-items-center mb-2">
+                <input type="checkbox" class="custom-control-input" id="customCheck10">
+                <label class="custom-control-label" for="customCheck10">
+                    <span class="my_fonts">价格: 从低到高</span>
+                </label>
+            </div>
+            <div class="custom-control custom-checkbox d-flex align-items-center mb-2">
+                <input type="checkbox" class="custom-control-input" id="customCheck11">
+                <label class="custom-control-label" for="customCheck11">
+                    <span class="my_fonts">价格: 从高到低</span>
+                </label>
+            </div>
+            <!-- 畅销书-->
+            <h4 class="my_fonts mt-5">畅销书</h4>
+            <div class="d-flex justify-content-between align-items-center changxiaoshu mt-4">
+                <a href="#"></a>
+                <div>
+                    <p class="my_fonts">仙人掌花</p>
+                    <p class="my_fonts">$10.99</p>
+                    <span class="iconfont icon-iconfontxingxing"></span>
+                    <span class="iconfont icon-iconfontxingxing"></span>
+                    <span class="iconfont icon-iconfontxingxing"></span>
+                    <span class="iconfont icon-iconfontxingxing"></span>
+                    <span class="iconfont icon-iconfontxingxing"></span>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center changxiaoshu cxs1 mt-4">
+                <a href="#"></a>
+                <div>
+                    <p class="my_fonts">郁金香花</p>
+                    <p class="my_fonts">$11.99</p>
+                    <span class="iconfont icon-iconfontxingxing"></span>
+                    <span class="iconfont icon-iconfontxingxing"></span>
+                    <span class="iconfont icon-iconfontxingxing"></span>
+                    <span class="iconfont icon-iconfontxingxing"></span>
+                    <span class="iconfont icon-iconfontxingxing"></span>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center changxiaoshu cxs2 mt-4">
+                <a href="#"></a>
+                <div>
+                    <p class="my_fonts">仙人掌花</p>
+                    <p class="my_fonts">$9.99</p>
+                    <span class="iconfont icon-iconfontxingxing"></span>
+                    <span class="iconfont icon-iconfontxingxing"></span>
+                    <span class="iconfont icon-iconfontxingxing"></span>
+                    <span class="iconfont icon-iconfontxingxing"></span>
+                    <span class="iconfont icon-iconfontxingxing"></span>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+        <!--商品图片片区域-->
+        <div class="col-sm-12 col-md-9 row shop_list p-0">
+            <div class="col-4 w-100 mb-5 pr-0 pl-4">
+                <a href="#" class="col-4 p-0">
+                    <img src="img/bg-img/40.png" alt="" class="w-100"/>
+                </a>
+                <p class="text-center my_fonts mt-3">仙人掌花</p>
+                <p class="text-center my_fonts price">$10.99</p>
+            </div>
+            <div class="col-4 w-100 mb-5 pr-0 pl-4">
+                <a href="#" class="col-4 p-0">
+                    <img src="img/bg-img/41.png" alt="" class="w-100"/>
+                </a>
+                <p class="text-center my_fonts mt-3">仙人掌花</p>
+                <p class="text-center my_fonts price">$10.99</p>
+            </div>
+            <div class="col-4 w-100 mb-5 pr-0 pl-4">
+                <a href="#" class="col-4 p-0">
+                    <img src="img/bg-img/42.png" alt="" class="w-100"/>
+                </a>
+                <p class="text-center my_fonts mt-3">仙人掌花</p>
+                <p class="text-center my_fonts price">$10.99</p>
+            </div>
+            <div class="col-4 w-100 mb-5 pr-0 pl-4">
+                <a href="#" class="col-4 p-0">
+                    <img src="img/bg-img/43.png" alt="" class="w-100"/>
+                </a>
+                <p class="text-center my_fonts mt-3">仙人掌花</p>
+                <p class="text-center my_fonts price">$10.99</p>
+            </div>
+            <div class="col-4 w-100 mb-5 pr-0 pl-4">
+                <a href="#" class="col-4 p-0">
+                    <img src="img/bg-img/44.png" alt="" class="w-100"/>
+                </a>
+                <p class="text-center my_fonts mt-3">仙人掌花</p>
+                <p class="text-center my_fonts price">$10.99</p>
+            </div>
+            <div class="col-4 w-100 mb-5 pr-0 pl-4">
+                <a href="#" class="col-4 p-0">
+                    <img src="img/bg-img/45.png" alt="" class="w-100"/>
+                </a>
+                <p class="text-center my_fonts mt-3">仙人掌花</p>
+                <p class="text-center my_fonts price">$10.99</p>
+            </div>
+            <div class="col-4 w-100 mb-5 pr-0 pl-4">
+                <a href="#" class="col-4 p-0">
+                    <img src="img/bg-img/46.png" alt="" class="w-100"/>
+                </a>
+                <p class="text-center my_fonts mt-3">仙人掌花</p>
+                <p class="text-center my_fonts price">$10.99</p>
+            </div>
+            <div class="col-4 w-100 mb-5 pr-0 pl-4">
+                <a href="#" class="col-4 p-0">
+                    <img src="img/bg-img/47.png" alt="" class="w-100"/>
+                </a>
+                <p class="text-center my_fonts mt-3">仙人掌花</p>
+                <p class="text-center my_fonts price">$10.99</p>
+            </div>
+            <div class="col-4 w-100 mb-5 pr-0 pl-4">
+                <a href="#" class="col-4 p-0">
+                    <img src="img/bg-img/48.png" alt="" class="w-100"/>
+                </a>
+                <p class="text-center my_fonts mt-3">仙人掌花</p>
+                <p class="text-center my_fonts price">$10.99</p>
+            </div>
+        </div>
+    </div>
+    <!-- 底部分页条-->
+    <ul class="pagination float-right">
+        <li class="page-item active mx-2">
+            <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item mx-2">
+            <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item ml-2">
+            <a class="page-link" href="#">&gt;</a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

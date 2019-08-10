@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--设置视口-->
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <!-- 导入css-->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <!-- 导入3个js,有顺序要求-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- 样式 -->
+    <link rel="stylesheet" href="css/shop_cart.css">
+    <link rel="stylesheet" href="css/comm.css">
+    <link rel="stylesheet" href="css/iconfont.css"/>
+</head>
+<body>
+    <!--面包屑导航-->
+    <div class="container part_top mt-5">
+        <ul class="breadcrumb bg-transparent">
+            <li class="breadcrumb-item">
+                <a href="#" class="my_fonts">
+                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span> 首页</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="#" class="my_fonts">购物车</a>
+            </li>
+        </ul>
+    </div>
+    <!-- 制品 数量 价钱 总价 -->
+    <div class="container">
+        <!-- 标题 -->
+        <div class="zp_sl_jq_zj mt-5">
+            <ul class="list-unstyled d-flex justify-content-start align-items-center bt">
+                <li>商品</li>
+                <li>数量</li>
+                <li>单价</li>
+                <li>总价</li>
+            </ul>
+        </div>
+        <hr class="mt-4">
+        <!-- 商品列表 -->
+        <div class="splb mt-3">
+            <ul class="list-unstyled price d-flex justify-content-start align-items-center mt-4 pt-2">
+            <li>
+                <img src="img/bg-img/34.jpg" alt="">
+                <span>仙人掌</span>
+            </li>
+            <li class="text-left">
+                <span class="h3 m-0 text-center jian">-</span>
+                <input type="number" class="border-0" min="1" max="12" name="quantity" value="1">
+                <!-- <span class="h5 font-weight-normal m-0">1</span> -->
+                <span class="h4 m-0 text-center jia">+</span>
+            </li>
+            <li>￥9.99</li>
+            <li>￥9.99</li>
+            <li class="text-right text-danger font-weight-bold">X</li>
+            </ul>
+            <hr class="mt-5">
+        </div>
+        <!-- 折扣优惠 购物车总数 -->
+        <div class="dbxq row mt-5 pt-4">
+            <!-- 折扣优惠 -->
+            <div class="col-sm-12 col-md-6 zkyh">
+                <h4 class="mb-2">折扣优惠</h4>
+                <p class="my_fonts mb-3">优惠券可以在结账前在购物车中使用。从卖家的展位添加符合条件的商品，以创建优惠券代码到您的购物车。点击绿色的“应用代码”按钮，将优惠券添加到您的订单中。订单总额将更新以指示特定于输入的优惠券代码的节省。</p>
+                <ul class="list-unstyled d-flex justify-content-between align-items-center">
+                    <li>
+                        <input type="text" name="" id="" class="w-100" placeholder="Enter your coupon code">
+                    </li>
+                    <li>
+                        <a href="#" class="btn w-100">申请优惠卷</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 购物车总数 -->
+            <div class="col-sm-12 col-md-6 gwczs  pl-md-5 mt-sm-5 mt-md-0 ">
+                <h5>购物车总数</h5>
+                <hr class="mt-3">
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <span>小计</span>
+                    <span>￥9.99</span>
+                </div>
+                <hr class="mt-3">
+                <div class="d-flex justify-content-between align-items-center w-100 biaodan mt-4">
+                    <p class="w-25">运输</p>
+                    <div class="w-75">
+                        <select class="w-100">
+                            <option value="">中国</option>
+                            <option value="">美国</option>
+                            <option value="">日本</option>
+                            <option value="">韩国</option>
+                            <option value="">孟加拉国</option>
+                        </select>
+                        <input type="text" placeholder="State" class="w-100 mt-3">
+                        <input type="text" placeholder="ZIP" class="w-100 mt-3">
+                        <p class="btn w-100 mt-3">更新总计</p>
+                    </div>
+                </div>
+                <hr class="mt-4">
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span>总价</span>
+                        <span>￥9.99</span>
+                </div>
+                <p class="btn w-100 mt-4">进行结算</p>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+</body>
+</html>

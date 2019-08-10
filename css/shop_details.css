@@ -1,0 +1,204 @@
+/*顶部面包屑导航*/
+.breadcrumb-item+.breadcrumb-item::before{
+    content: ">";
+    padding-left: 8px;
+    padding-right: 4px;
+}
+.part_top li:nth-child(1) a{
+    color: #303030;
+}
+.part_top li:nth-child(2) a{
+    color: #303030;
+}
+.part_top li:last-child a{
+    color: #b7b7b7;
+}
+.part_top li:not(:last-child) a:hover{
+    color: #70c745 !important;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+/*商品详情左侧轮播图*/
+.left_side .carousel img,.left_side ul{
+    width: 85%;
+}
+
+/*商品详情右侧详情*/
+.right_side>h1{
+    font-size: 30px;
+    color: #303030;
+}
+.right_side>h3{
+    font-size: 26px;
+    color: #70c745;
+}
+.right_side>.price>li:nth-child(1){
+    width: 130px;
+    height: 46px;
+    background-color: #f2f4f5;
+    line-height: 46px;
+}
+.right_side>.price>li:nth-child(1)>span:not(:nth-child(2)):hover{
+    cursor: pointer;
+}
+.right_side>.price>li:nth-child(1)>span{
+    display: inline-block;
+    width: 40px;
+}
+.right_side>.price>li:nth-child(1)>span:nth-child(1){
+    line-height: 40px;
+}
+/* 去掉type=number的上下箭头 */
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button { -webkit-appearance: none; }
+input[type="number"]{ -moz-appearance: textfield; }
+.right_side>.price>li:nth-child(1)>input{
+    width: 30px;
+    background-color: #f2f4f5;
+    text-align: center;
+    position: relative;
+    top: -2px;
+}
+/* 添加到购物车按钮 */
+.right_side>.price>li:nth-child(2){
+    width: 150px;
+    height: 46px;
+    background-color: #70c745;
+    line-height: 46px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.right_side>.price>li:nth-child(2):hover{
+    cursor: pointer;;
+    background: #ffffff;
+    color: #70c745;
+    border: 2px solid #70c745;
+}
+.right_side>.price>li:nth-child(3),.right_side>ul>li:nth-child(4){
+    width: 46px;;
+    height: 46px;
+    background-color: #f2f4f5;
+}
+.right_side .price{
+    width: 80%;
+    margin-top: 25px !important;
+}
+.right_side>.ul2{
+    
+}
+.right_side>.ul2>li:first-child{
+    width: 150px;
+}
+.right_side>.ul2>li:first-child>p{
+    color: #303030;
+    margin-bottom: 13px !important;
+}
+.right_side>.ul2>li:last-child>p{
+    margin-bottom: 13px !important;
+}
+
+/* 描述 附加信息 评论  */
+.miaosu ul{
+    margin-top: 50px !important;
+}
+.miaosu ul>li{
+    padding: 0 15px !important;
+    font-size: 20px;
+    color: #303030;
+    transition: all 0.2s linear;
+}
+.miaosu ul>li:hover{
+    cursor: pointer;
+    color: #70c745;
+}
+.miaosu .fjxx p:nth-child(2n+1){
+    color: #303030;
+    font-size: 16px;
+    margin-top:20px !important;
+}
+.miaosu .fjxx p:nth-child(2n){
+    color: #707070;
+    font-size: 16px;
+    margin-top: 8px !important;
+}
+.miaosu .pl span:first-child{
+    font-size: 16px;
+    color: #303030;
+}
+.miaosu .pl p{
+    font-size: 12px;
+    color: #707070;
+}
+.miaosu .pl h4{
+    font-size: 20px;
+    color: #303030;
+}
+.iconfont.pf {
+    font-family: "iconfont" !important;
+    font-size: 25px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #cfcfcf;
+}
+.miaosu .ndpf{
+    position: relative;
+    top: -3px;
+}
+.miaosu .nc_yuanyin div p{
+    font-size: 14px;
+    color:#707070; 
+}
+.miaosu .nc_yuanyin div input{
+    height: 40px;
+    background-color: #f2f4f5;
+    border: 0;
+    padding: 6px 12px !important;
+    font-size: 14px;
+    color: #495057;
+}
+.miaosu .nc_yuanyin div select{
+    height: 40px;
+    background-color: #f2f4f5;
+    border: 0;
+    padding: 6px 12px !important;
+    font-size: 14px;
+    color: #495057;
+}
+.miaosu .nc_yuanyin div textarea{
+    background-color: #f2f4f5;
+    border: 0;
+    font-size: 14px;
+    color: #495057;
+}
+.miaosu button{
+    width: 150px;
+    height: 46px;
+    background-color: #70c745;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 0;
+}
+/*相关产品*/
+.xgcp ul li img{
+    width: 90%;
+    /* position: relative; */
+}
+/*.xgcp ul li:nth-child(2) img{
+    left: 8px;
+}
+.xgcp ul li:nth-child(3) img{
+    left: 16px;
+}
+.xgcp ul li:nth-child(4) img{
+    left: 20px;
+}*/
+.xgcp ul{
+    position: relative;
+    left: 13px;
+}
+.xgcp>h1{
+    color: #303030;
+    font-size: 30px;
+}

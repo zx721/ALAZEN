@@ -1,0 +1,211 @@
+/*顶部面包屑导航*/
+.breadcrumb-item+.breadcrumb-item::before{
+    content: ">";
+    padding-left: 8px;
+    padding-right: 4px;
+}
+.part_top li:nth-child(1) a{
+    color: #303030;
+}
+.part_top li:nth-child(2) a{
+    color: #b7b7b7;
+}
+.part_top li:nth-child(2) a:hover{
+    color: #70c745 !important;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+.part_top li:nth-child(1) a:hover{
+    color: #70c745 !important;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+/* 制品 数量 价钱 总价 */
+.zp_sl_jq_zj .bt li{
+    font-size: 20px;
+    color: #303030;
+}
+.zp_sl_jq_zj .bt li:nth-child(1){
+    width: 40%;
+}
+.zp_sl_jq_zj .bt li:not(:first-child){
+    width: 20%;
+}
+
+/* 商品列表li布局 */
+.splb .price li:nth-child(1){
+    width: 40%;
+}
+.splb .price li:nth-child(2){
+    width: 20%;
+}
+.splb .price li:nth-child(3){
+    width: 20%;
+}
+.splb .price li:nth-child(4){
+    width: 15%;
+}
+.splb .price li:nth-child(5){
+    width: 5%;
+}
+/* 去掉type=number的上下箭头 */
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button { -webkit-appearance: none; }
+input[type="number"]{ -moz-appearance: textfield; }
+.right_side>.price>li:nth-child(1)>input{
+    width: 30px;
+    background-color: #f2f4f5;
+    text-align: center;
+    position: relative;
+    top: -2px;
+}
+/*数量加减按钮*/
+.splb .price>li:nth-child(2) span{
+    height: 46px;
+    background-color: #f2f4f5;
+    line-height: 46px;
+}
+.splb .jia,.splb .jian{
+    cursor: pointer;
+}
+.splb .price>li:nth-child(2)>span{
+    display: inline-block;
+    width: 40px !important;
+}
+.splb .price>li:nth-child(2)>span:nth-child(1){
+    line-height: 40px;
+}
+.splb .jia{
+    position: relative;
+    top: -1px;
+    left: -10px;
+    line-height: 40px !important;
+}
+.splb .price>li:nth-child(2)>input{
+    background-color: #f2f4f5;
+    height: 46px;
+    position: relative;
+    top: -2px;
+    left: -5px;
+    width: 30px;
+    text-align: center;
+    z-index: 2;
+}
+.splb li:nth-child(1) img{
+    height: auto;
+    max-width: 100%;
+    box-shadow: 0px 0px 5px #b7b7b7;
+    margin-right: 20px;
+}
+.splb li:nth-child(1) span{
+    font-size: 18px;
+    color: #303030;
+}
+.splb ul li:nth-child(3),.splb ul li:nth-child(4){
+    font-size: 18px;
+    color: #303030;
+    font-weight: bold;
+}
+@media screen and (max-width:767px){
+    .splb .price>li:nth-child(2)>span{
+        width: 25px !important;
+    }
+}
+/* 折扣优惠 购物车总数 */
+/* 折扣优惠 */
+.dbxq .zkyh ul li:nth-child(1){
+    width: 55%;
+}
+.dbxq .zkyh ul li:nth-child(2){
+    width: 40%;
+}
+.dbxq .zkyh ul li:nth-child(2) a{
+    background-color: #cccccc;
+    border-radius: 0;
+    height: 46px;
+    text-align: center;
+    color: #303030;
+    font-size: 16px;
+    line-height: 33px;
+    border: 0;
+    transition: all 0.2s linear;
+}
+.dbxq .zkyh ul li:nth-child(2) a:hover{
+    background-color: #70c745;
+    color: #ffffff;
+}
+.dbxq .zkyh ul li:nth-child(1) input{
+    height: 46px;
+    border: 0;
+    background-color: #f5f5f5;
+    padding: 0 30px !important;
+    font-size: 14px;
+}
+.dbxq .zkyh h4{
+    font-size: 20px;
+    color: #303030;
+}
+/* 购物车总数 */
+.dbxq .gwczs h5{
+    font-size: 20px;
+    color: #303030;
+}
+.dbxq .gwczs>div span{
+    font-size: 18px;
+    color: #303030;
+}
+.dbxq .gwczs>div span:last-child{
+    font-weight: bold;
+}
+.dbxq .gwczs .biaodan select{
+    height: 30px;
+    border: 0;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 0 10px !important;
+    font-size: 12px;
+    color: #495057;
+}
+.dbxq .gwczs .biaodan>p{
+    font-size: 18px;
+    color: #303030;
+    position: relative;
+    top: -70px;
+}
+.dbxq .gwczs .biaodan input{
+    height: 30px;
+    border: 0;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 0 10px !important;
+    font-size: 12px;
+    color: #495057;
+}
+.dbxq .gwczs .biaodan div p{
+    height: 30px;
+    border: 0;
+    background-color: #cccccc;
+    border-radius: 0;
+    font-size: 14px;
+    color: #303030;
+    line-height: 30px;
+}
+.dbxq .gwczs .biaodan div p:hover{
+    background-color: #70c745;
+    color: #ffffff;
+    transition: all 0.2s linear;
+}
+.dbxq .gwczs>p{
+    background-color: #70c745;
+    color: #ffffff;
+    font-weight: bold;
+    height: 46px;
+    font-size: 16px;
+    line-height: 46px;
+    border-radius: 0;
+    transition: all 0.2s linear;
+}
+.dbxq .gwczs>p:hover{
+    background-color: #fff;
+    color: #70c745;
+    border: 2px solid #70c745;
+}

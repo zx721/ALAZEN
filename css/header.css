@@ -1,0 +1,149 @@
+/* 标题区域样式 Header Area CSS */
+.header-area{
+    width: 100%;
+    position: relative;
+    background:url("../img/bg-img/24.jpg") no-repeat;
+    background-size:cover;
+    background-position: center center;
+    height: 350px;
+}
+.header-area-Mask{
+    background-color:rgba(17, 17, 17, 0.5);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.top-header-area >div>p{
+    line-height: 13rem;
+    font-size: 36px;
+}
+.top-header-area{
+    width: 100%;
+    height: 42px;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(235, 235, 235, 0.2);
+}
+.content{
+    background-color: transparent;
+    width: 100%;
+    height: 41px;
+    margin: 0 auto;
+}
+.content .top-font1{
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+    color: #fff;
+}
+.email_icon{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url("../img/core-img/email_phone.gif") no-repeat;
+    background-position: 1px 3px;
+    background-size: cover;
+}
+.phone_icon{
+    background-position: 4px -20px;
+}
+.top-font2{
+    font-size: 12px;
+    color: #fff;
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    content:"|";
+    color:rgba(235, 235, 235, 0.2);
+}
+.rw_icon{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url("../img/core-img/rw.gif") no-repeat;
+    background-position: -2px 3px;
+    background-size: cover;
+}
+.gwc_icon {
+    display: inline-block;
+    width: 15px;
+    height: 19px;
+    background: url("../img/core-img/rw.gif") no-repeat;
+    background-position: -45px 5px;
+    background-size: cover;
+}
+.breadcrumb-item a:hover{
+    color: #ffffff !important;
+}
+.breadcrumb-item ul li a{
+    font-size: 12px;
+    color: #ffffff;
+}
+.breadcrumb-item{
+    font-size: 12px;
+    color: #ffffff;
+}
+.dropdown a:hover{
+    cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+    .content .top-font1 span:nth-child(2){
+        display: none;
+    }
+    .breadcrumb .top-font2 span:nth-child(2){
+        display: none;
+    }
+    .content .top-font1 .email_icon{
+        background-position: 1px 0px;
+    }
+    .content .top-font1 .phone_icon{
+        background-position: 1px -25px;
+        position: absolute;
+        left: -60%;
+        top:30%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+}
+@media screen and (min-width: 992px){
+
+
+}
+
+.navbar{
+    width: 100%;
+    height: 90px;
+}
+.nav-link{
+    color: #ffffff !important;
+    margin-left:1.5rem !important;
+    font-size: 18px;
+    font-family: "Dosis", sans-serif;
+}
+.sreach_icon{
+    width: 35%;
+    position: relative;
+    left: 45%;
+}
+.search_link{
+    margin: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+
+.brief_intro>div:nth-child(3)>div:nth-child(2){
+    color: #70c745;
+    width: 125px;
+    height: 46px;
+    border: 2px solid #70c745;
+    line-height: 30px;
+}
+.brief_intro>div:nth-child(3)>div:nth-child(1) {
+    width: 125px;
+    height: 46px;
+    background-color: #70c745 !important;
+    line-height: 30px;
+    margin-right: 7%;
+}
