@@ -1,0 +1,2 @@
+# ALAZEN
+ALAZEN静态页面
